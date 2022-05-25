@@ -10,11 +10,12 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float upSpeed;
     public float maxSpeed = 10;
-    private bool onGroundState = true;
+    public bool onGroundState = true;
     private bool faceRightState = true;
     public Transform enemyLocation;
     public TextMeshProUGUI scoreText;
     public int score = 0;
+    public int coins = 0;
     private bool countScoreState = false;
     public bool deathState = false;
 
@@ -45,6 +46,14 @@ public class PlayerController : MonoBehaviour
             marioBody.velocity = new Vector2(0, marioBody.velocity.y);
         }
 
+        // Extra: Jump Higher while spacebar is held
+        if (Input.GetKey("space")){
+            marioBody.gravityScale = 5;
+        }
+        else {
+            marioBody.gravityScale = 10;
+        }
+
         // Jump Impulse Physics
         if (Input.GetKeyDown("space") && onGroundState){
             marioBody.AddForce(Vector2.up * upSpeed, ForceMode2D.Impulse);
@@ -58,7 +67,7 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.CompareTag("Ground")){
             onGroundState = true;
             countScoreState = false;
-            scoreText.text = "Score: " + score.ToString();
+            scoreText.text = "Score :\n" + score.ToString();
         }
     }
 
@@ -67,6 +76,12 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy")){
             Debug.Log("Collided with Goomba!");
             deathState = true;
+        }
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Debug.Log("Collided with Coin!");
+            coins++;
+            score += 10;
         }
     }
 

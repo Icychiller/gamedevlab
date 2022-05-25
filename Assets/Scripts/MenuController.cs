@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
     public GameObject startMenu;
     public GameObject gameOver;
     public TextMeshProUGUI endScoreText;
+    public TextMeshProUGUI endCoinText;
     private bool isGameOver = false;
     void Awake()
     {
@@ -57,6 +58,7 @@ public class MenuController : MonoBehaviour
             
             gameOver.SetActive(true);
             endScoreText.text = "Score\n"+playerController.score;
+            endCoinText.text = "Coins\n"+playerController.coins;
             isGameOver = true;
         }
     }
