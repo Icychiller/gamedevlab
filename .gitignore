@@ -11,6 +11,7 @@
 [Aa]rtifacts/
 [Bb]in/
 [Ll]ogs/
+[Rr]ecordings/
 [Mm]emory[Cc]aptures/
 [Uu]nity[Gg]enerated/
 [Uu]ser[Ss]ettings/
@@ -18,6 +19,9 @@
 [Ww]indows[Bb]uild/
 [Dd]ebug[Oo]utput/
 [Dd]ebug[Oo]utput.meta
+
+# Packed Addressables
+[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 ![Aa]ssets/**/*.meta
