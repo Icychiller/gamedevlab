@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Coin
+  - Enemy
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -11,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - QuestionBox
+  - Obstacles
+  - Spawned
   - 
   - 
   - 
@@ -38,6 +42,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background4
+    uniqueID: 4030508589
+    locked: 0
+  - name: Background3
+    uniqueID: 1694745781
+    locked: 0
+  - name: Background2
+    uniqueID: 1897896315
+    locked: 0
+  - name: Background1
+    uniqueID: 1014635933
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

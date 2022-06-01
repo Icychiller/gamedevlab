@@ -8,36 +8,42 @@ public class EnemyController : MonoBehaviour
     private float originalX;
     private float maxLeft = -5f;
     private float maxRight = 5f;
-    private float maxOffset = 10f;
+    private float speed = 4f;
     private float enemyPatrolTime = 2f;
     private int moveRight = -1;
-    private float speedUpScore = 0f;
     private float speedMultiplier = 1f;
     private Vector2 velocity;
 
     private Rigidbody2D enemyBody;
+    private BoxCollider2D enemyCollider;
 
     public GameObject mario;
     private PlayerController marioControl;
     private Rigidbody2D marioBody;
+    public BoxCollider2D patrolRegion;
+    public bool detectPlayer = false;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyBody = GetComponent<Rigidbody2D>();
+        enemyCollider = GetComponent<BoxCollider2D>();
+
         // Call PlayerController for score counter
         // TODO: Change in future.
         marioControl = mario.GetComponent<PlayerController>();
         marioBody = mario.GetComponent<Rigidbody2D>();
         // Get Starting Pos
         originalX = transform.position.x;
+        // Get Patrol Region Limits
+        maxLeft = patrolRegion.bounds.min.x + enemyCollider.size.x/2;
+        maxRight = patrolRegion.bounds.max.x - enemyCollider.size.x/2;
         ComputeVelocity();
     }
 
     void ComputeVelocity()
     {
-        maxOffset = maxRight - maxLeft;
-        velocity = new Vector2((moveRight)*maxOffset / enemyPatrolTime, 0 );
+        velocity = new Vector2((moveRight)*speed, 0 );
     }
 
     void MoveGoomba()
@@ -69,7 +75,7 @@ public class EnemyController : MonoBehaviour
         */
         // Update with Mario's Position. Expanding Patrol Path
 
-        if (enemyBody.position.x < maxLeft || enemyBody.position.x > maxRight)
+        if ((enemyBody.position.x < maxLeft && moveRight<0) || (enemyBody.position.x > maxRight && moveRight>0))
         {
             FlipGoomba();
         }
@@ -78,24 +84,24 @@ public class EnemyController : MonoBehaviour
         }
 
         // Chase Mario if in patrol range and on the ground
+        // Edit: Chases Mario if in patrol region and on the ground
+        // Edit: Goomba Speeds up when mario is in range rather than with score.
 
-        if(marioControl.onGroundState && marioBody.position.x > maxLeft && marioBody.position.x < maxRight && 
+        /* if(marioControl.onGroundState && marioBody.position.x > maxLeft && marioBody.position.x < maxRight && 
         (enemyBody.position.x < marioBody.position.x && moveRight == -1 || 
-        enemyBody.position.x > marioBody.position.x && moveRight == 1))
+        enemyBody.position.x > marioBody.position.x && moveRight == 1)) */
+        if(detectPlayer)
         {
-            Debug.Log("1 Mario Detected");
-            FlipGoomba();
-        }
-
-        // Speed Up Goomba every 5 points
-        if (Mathf.Floor(marioControl.score/5) != speedUpScore)
-        {
-            speedUpScore += 1f;
-            if (speedMultiplier < 10f)
+            if(((marioBody.position.x - enemyBody.position.x)*moveRight) < 0)
             {
-                Debug.Log("Goomba Speedup");
-                speedMultiplier = 1 + speedUpScore/5;
+                Debug.Log("Detect Mario and Wrong Way");
+                FlipGoomba();
             }
+            speedMultiplier = 1.5f;
+        }
+        else
+        {
+            speedMultiplier = 1f;
         }
 
     }
