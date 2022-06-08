@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer marioSprite;
     private Animator marioAnimator;
     private AudioSource marioAudio;
+    [SerializeField]
+    private ParticleSystem somethingWeird;
     public float speed;
     public float upSpeed;
     public float maxSpeed = 10;
@@ -91,6 +93,7 @@ public class PlayerController : MonoBehaviour
                 onGroundState = true;
                 countScoreState = false;
                 scoreText.text = "Score :\n" + score.ToString();
+                somethingWeird.Play();
                 break;
             }
         }

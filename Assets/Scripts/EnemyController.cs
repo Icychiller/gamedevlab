@@ -9,7 +9,6 @@ public class EnemyController : MonoBehaviour
     private float maxLeft = -5f;
     private float maxRight = 5f;
     private float speed = 4f;
-    private float enemyPatrolTime = 2f;
     private int moveRight = -1;
     private float speedMultiplier = 1f;
     private Vector2 velocity;

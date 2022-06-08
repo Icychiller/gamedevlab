@@ -1,0 +1,873 @@
+fileFormatVersion: 2
+guid: 145f8b59b972b4b4e9dca5eabc30766d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 857.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce6efdbcadd9ba4a9763f58f06e59eb
+      internalID: -896672290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 857.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0777320067701b7469428db63af26f9d
+      internalID: -117511653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 857.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8674a7a636208449c7f5d92724da85
+      internalID: -399980208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 857.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e594f6ef07c327488cccf4969ef8732
+      internalID: -1085422857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 735.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4d1474422b51b41891a47d5c4818ac
+      internalID: -1887712030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 735.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a477614e6505f40b25b9af177bab83
+      internalID: 190537642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 735.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb17a707c4b9c147a7e4ff5974d368e
+      internalID: 672576228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 735.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c848161e1a78d5d4d9cbf253335c6dd7
+      internalID: -1285001593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 613.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614c84eac36a31848ab9d615ef776874
+      internalID: -1135134444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 613.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08898aa96fd67e428e07e75ae22bca3
+      internalID: -572278326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 613.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8e6bfe5eb2efd469a75bee0f16fd4a
+      internalID: 103493889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 613.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a92f90d7bcfe064582fa901d7523b85
+      internalID: 1569727458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 491.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc0ebaaa4050a949940b866554dd0cc
+      internalID: 416290456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 491.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9418090082583214f8c9fee4b582bd71
+      internalID: -164238939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 491.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75924bb21d896b54f93c05943607ad6b
+      internalID: -1156325270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 491.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6c987ed573c0046ac72400479f26b7
+      internalID: 1899316556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 491.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c0320809545fd43bcf4c6844a15c4f
+      internalID: -54240245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 369.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc8812c7d189874586ab79f20722479
+      internalID: -2140793011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 369.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc26016ddcd7d44a8492c1bead8ac94
+      internalID: 321590476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 369.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f96cce0e79ec742929ab82c17bdb12
+      internalID: -1229281258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 247.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b270d70d9e4b24d91f756551ca3f2a
+      internalID: 1730932485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 247.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f0233d6fa7d3e42b6d220c9c5001a5
+      internalID: -1003681689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 247.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e046d6dad7754e443b09d6de4fe6b62c
+      internalID: -464822600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 247.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9485acabb78d0f340a5efd7e500a66cc
+      internalID: 313161051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 125.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba83d2f9b50e55c48bc8632d7bd83670
+      internalID: 2002675483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 125.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07222dae0c501d14aaf1d9af166f3ce8
+      internalID: 1620538931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 125.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d6fda5bee008c4895852e39249d671
+      internalID: 1394190703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 125.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43e5b88dd6d1e5488e1ff13da9e23c3
+      internalID: -652961578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 3.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabd72d6590f94944b7bb45e34b0452c
+      internalID: 1587806574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 3.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2537e19632ab24c95bd1277e201752
+      internalID: 360531709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 3.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25f74b43412ad043affd3aa04a162c7
+      internalID: 1355584310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 3.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cdc5946c63bc54f88131e66f24d332
+      internalID: 943761220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 3.5
+        width: 61.25
+        height: 122.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddd59d7eff73444e914399083793dab
+      internalID: -1729238474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_28: 1587806574
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_30: 1355584310
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_14: -1156325270
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_15: 1899316556
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_17: -2140793011
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_26: 1394190703
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_12: 416290456
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_8: -1135134444
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_3: -1085422857
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_13: -164238939
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_25: 1620538931
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_21: -1003681689
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_20: 1730932485
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_19: -1229281258
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_18: 321590476
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_7: -1285001593
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_4: -1887712030
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_27: -652961578
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_11: 1569727458
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_0: -896672290
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_31: 943761220
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_6: 672576228
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_16: -54240245
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_24: 2002675483
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_23: 313161051
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_29: 360531709
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_32: -1729238474
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_10: 103493889
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_1: -117511653
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_2: -399980208
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_22: -464822600
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_9: -572278326
+      bundle-of-dried-italian-spaghetti-pasta-tied-in-the-centre-standing-upright-on-white-with-lateral-copyspace-2C3MXRA-removebg-preview_5: 190537642
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
