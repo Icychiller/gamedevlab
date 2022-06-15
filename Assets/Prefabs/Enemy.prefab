@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1822113413}
   - component: {fileID: 1822113414}
   - component: {fileID: 1822113412}
+  - component: {fileID: 7846605016503649469}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -149,3 +150,23 @@ MonoBehaviour:
   mario: {fileID: 0}
   patrolRegion: {fileID: 0}
   detectPlayer: 0
+--- !u!95 &7846605016503649469
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3476816433769238048}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ced7a5d4ec0a8dc4f9989c944aa01b86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

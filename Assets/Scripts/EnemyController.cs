@@ -15,29 +15,32 @@ public class EnemyController : MonoBehaviour
 
     private Rigidbody2D enemyBody;
     private BoxCollider2D enemyCollider;
+    private SpriteRenderer enemySprite;
 
-    public GameObject mario;
-    private PlayerController marioControl;
-    private Rigidbody2D marioBody;
+    [System.NonSerialized]
+    public Rigidbody2D marioBody;
     public BoxCollider2D patrolRegion;
     public bool detectPlayer = false;
+    public GameConstants gameConstants;
+    public int id = -1;
+    private float originalY;
+    private float originalScale;
 
     // Start is called before the first frame update
     void Start()
     {
+        originalY = transform.position.y;
+        originalScale = transform.localScale.y;
         enemyBody = GetComponent<Rigidbody2D>();
         enemyCollider = GetComponent<BoxCollider2D>();
+        enemySprite = GetComponent<SpriteRenderer>();
 
-        // Call PlayerController for score counter
-        // TODO: Change in future.
-        marioControl = mario.GetComponent<PlayerController>();
-        marioBody = mario.GetComponent<Rigidbody2D>();
-        // Get Starting Pos
         originalX = transform.position.x;
         // Get Patrol Region Limits
         maxLeft = patrolRegion.bounds.min.x + enemyCollider.size.x/2;
         maxRight = patrolRegion.bounds.max.x - enemyCollider.size.x/2;
         ComputeVelocity();
+        GameManager.OnPlayerDeath += EnemyRejoice;
     }
 
     void ComputeVelocity()
@@ -53,6 +56,7 @@ public class EnemyController : MonoBehaviour
     void FlipGoomba()
     {
         moveRight *= -1;
+        enemySprite.flipX = (moveRight != -1);
         ComputeVelocity();
         MoveGoomba();
     }
@@ -60,20 +64,6 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /* // Original Code for reference (in quiz)
-        // Not at end yet
-        if (Mathf.Abs(enemyBody.position.x - originalX) < maxOffset){
-            MoveGoomba();
-        } 
-        // at the end and flip
-        else{
-            moveRight *= -1;
-            ComputeVelocity();
-            MoveGoomba();
-        }
-        */
-        // Update with Mario's Position. Expanding Patrol Path
-
         if ((enemyBody.position.x < maxLeft && moveRight<0) || (enemyBody.position.x > maxRight && moveRight>0))
         {
             FlipGoomba();
@@ -82,18 +72,11 @@ public class EnemyController : MonoBehaviour
             MoveGoomba();
         }
 
-        // Chase Mario if in patrol range and on the ground
-        // Edit: Chases Mario if in patrol region and on the ground
-        // Edit: Goomba Speeds up when mario is in range rather than with score.
-
-        /* if(marioControl.onGroundState && marioBody.position.x > maxLeft && marioBody.position.x < maxRight && 
-        (enemyBody.position.x < marioBody.position.x && moveRight == -1 || 
-        enemyBody.position.x > marioBody.position.x && moveRight == 1)) */
         if(detectPlayer)
         {
-            if(((marioBody.position.x - enemyBody.position.x)*moveRight) < 0)
+            if(marioBody != null && (((marioBody.position.x - enemyBody.position.x)*moveRight) < 0))
             {
-                Debug.Log("Detect Mario and Wrong Way");
+                // Debug.Log("Detect Mario and Wrong Way");
                 FlipGoomba();
             }
             speedMultiplier = 1.5f;
@@ -102,6 +85,67 @@ public class EnemyController : MonoBehaviour
         {
             speedMultiplier = 1f;
         }
-
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            // Check for collision within 50% margin
+            if ((enemyCollider.bounds.center.y) <= other.bounds.min.y)
+            {
+                KillSelf();
+            }
+            else
+            {
+                CentralManager.centralManagerInstance.damagePlayer();
+            }
+        }
+    }
+
+    public void SetID(int id)
+    {
+        this.id = id;
+    }
+
+    private void KillSelf()
+    {
+        CentralManager.centralManagerInstance.increaseScore();
+        CentralManager.centralManagerInstance.deadEnemy(this.id);
+        StartCoroutine(flatten());
+    }
+    IEnumerator flatten()
+    {
+        int steps = gameConstants.flattenSteps;
+        float stepper = 1f/(float)steps;
+
+        for (int i = 0; i < steps; i++)
+        {
+            this.transform.localScale = new Vector3(this.transform.localScale.x, this.transform.localScale.y - stepper, this.transform.localScale.z);
+
+            this.transform.position = new Vector3(this.transform.position.x, gameConstants.groundSurface + GetComponent<SpriteRenderer>().bounds.extents.y, this.transform.position.z);
+            yield return null;
+        }
+        transform.parent.gameObject.SetActive(false);
+        this.transform.localScale = new Vector3(this.transform.localScale.x,originalScale,this.transform.localScale.z);
+        this.transform.position = new Vector3(this.transform.position.x,originalY,this.transform.position.z);
+        yield break;
+    }
+
+    void EnemyRejoice()
+    {
+        this.speed = 0;
+        if (this.gameObject.activeInHierarchy)
+            StartCoroutine(dance());
+    }
+
+    IEnumerator dance()
+    {
+        while(true)
+        {
+            enemySprite.flipX = !enemySprite.flipX;
+            yield return new WaitForSeconds(0.3f);
+        }
+    }
+
 }

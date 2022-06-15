@@ -15,7 +15,7 @@ public class QuestionBoxController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager.OnCoinCollect += ResetQuestionBox;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -39,10 +39,13 @@ public class QuestionBoxController : MonoBehaviour
 
     public void ResetQuestionBox()
     {
-        hit = false;
-        springJoint.enabled = true;
-        rigidBody.bodyType = RigidbodyType2D.Dynamic;
-        spriteRenderer.sprite = normQuestionBox;
+        if(hit)
+        {
+            hit = false;
+            springJoint.enabled = true;
+            rigidBody.bodyType = RigidbodyType2D.Dynamic;
+            spriteRenderer.sprite = normQuestionBox;
+        }
     }
 
     bool  ObjectMovedAndStopped(){

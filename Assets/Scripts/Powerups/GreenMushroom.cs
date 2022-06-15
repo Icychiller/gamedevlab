@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MushroomController : MonoBehaviour
+public class GreenMushroom : MonoBehaviour, ConsumableInterface
 {
 
     private int moveRight = 1;
@@ -10,14 +10,29 @@ public class MushroomController : MonoBehaviour
     public float speed = 5f;
     private Rigidbody2D shroomBody;
     private Collider2D shroomCollider;
+    private SpriteRenderer shroomRenderer;
     private bool collected = false;
 
+    public Texture icon;
+
+    public void consumedBy(GameObject player)
+    {
+        player.GetComponent<PlayerController>().upSpeed += 10;
+        StartCoroutine(removeEffect(player));
+    }
+
+    IEnumerator removeEffect(GameObject player)
+    {
+        yield return new WaitForSeconds(5f);
+        player.GetComponent<PlayerController>().upSpeed -= 10;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         shroomBody = GetComponent<Rigidbody2D>();
         shroomCollider = GetComponent<BoxCollider2D>();
+        shroomRenderer = GetComponent<SpriteRenderer>();
         float moveX = Random.Range(-5f, 5f);
         moveRight = (int) Mathf.Floor(moveX/Mathf.Abs(moveX));
         ComputeVelocity();
@@ -38,6 +53,11 @@ public class MushroomController : MonoBehaviour
 
     }
 
+    public void destroySelf()
+    {
+        Destroy(gameObject);
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.CompareTag("Player"))
@@ -46,7 +66,7 @@ public class MushroomController : MonoBehaviour
             shroomBody.bodyType = RigidbodyType2D.Static;
             collected = true;
             StartCoroutine(bloat());
-            
+            CentralManager.centralManagerInstance.addPowerup(icon, 0, this);
         }
         else{
             foreach(ContactPoint2D contactPoint in col.contacts)
@@ -68,7 +88,7 @@ public class MushroomController : MonoBehaviour
         this.transform.localScale = new Vector3(1.5f,1.5f,1);
         yield return new WaitForSeconds(0.4f);
         this.transform.localScale = new Vector3(1f,1f,1);
-        this.gameObject.SetActive(false);
+        shroomRenderer.enabled = false;
     }
 
     void ComputeVelocity()
@@ -87,10 +107,5 @@ public class MushroomController : MonoBehaviour
     {
         speed = 0;
         ComputeVelocity();
-    }
-
-    void OnBecameInvisible()
-    {
-        Destroy(gameObject);
     }
 }

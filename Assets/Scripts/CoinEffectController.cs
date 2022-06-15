@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CoinEffectController : MonoBehaviour
 {
-    public QuestionBoxController assignedBox;
     private AudioSource coinAudio;
     // Start is called before the first frame update
     void Start()
@@ -15,8 +14,8 @@ public class CoinEffectController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         coinAudio.PlayOneShot(coinAudio.clip);
-        assignedBox.ResetQuestionBox();
         ShowCoin(false);
+        CentralManager.centralManagerInstance.coinStolen();
     }
 
     public void ShowCoin(bool state)

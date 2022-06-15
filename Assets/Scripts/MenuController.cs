@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 using TMPro;
 
 public class MenuController : MonoBehaviour
 {
-
-    public PlayerController playerController;
     public GameObject startMenu;
     public GameObject gameOver;
     public TextMeshProUGUI endScoreText;
@@ -20,7 +19,7 @@ public class MenuController : MonoBehaviour
     {
         foreach (Transform eachChild in startMenu.transform)
         {
-            if (eachChild.name != "Score")
+            if (eachChild.name != "Score" && eachChild.name != "Powerups")
             {
                 Debug.Log("Child Found. Name: " + eachChild.name);
                 // Disable Each Child
@@ -30,17 +29,31 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    public void GameOver()
+    public void GameOver(int score, int coins)
     {
+        if (!isGameOver)
+        {
+            StartCoroutine(waitAWhile(score, coins));
+            
+        }
+    }
+
+    IEnumerator waitAWhile(int score, int coins)
+    {
+        yield return new WaitForSeconds(2.5f);
         Debug.Log("Game Over Triggered");
-        // Animation Here?
         Time.timeScale = 0f;
+        gameOver.SetActive(true);
+        endScoreText.text = "Score\n"+score;
+        endCoinText.text = "Coins\n"+coins;
+        isGameOver = true;
     }
 
     public void RestartGame()
     {
         Debug.Log("Game Restarted");
-        SceneManager.LoadScene("SampleScene");
+        CentralManager.centralManagerInstance.restartGame();
+        
     }
 
     // Start is called before the first frame update
@@ -49,17 +62,8 @@ public class MenuController : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (playerController.deathState && !isGameOver)
-        {
-            GameOver();
-            
-            gameOver.SetActive(true);
-            endScoreText.text = "Score\n"+playerController.score;
-            endCoinText.text = "Coins\n"+playerController.coins;
-            isGameOver = true;
-        }
+
     }
 }

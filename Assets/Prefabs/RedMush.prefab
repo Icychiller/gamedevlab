@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5415053094458830013}
   - component: {fileID: 5415053094458830012}
   - component: {fileID: 5415053094458829987}
-  - component: {fileID: -463919026148490599}
+  - component: {fileID: 6096211282112458755}
   m_Layer: 8
-  m_Name: ConsumableMushroomSimple
+  m_Name: RedMush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: cbe738a6b31804fbfa01d65f850d595b, type: 3}
+  m_Sprite: {fileID: 21300056, guid: cbe738a6b31804fbfa01d65f850d595b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,9 +132,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.12, y: 1.12}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-463919026148490599
+--- !u!114 &6096211282112458755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5415053094458829986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 275db3e378656b4448c6b4ebe1bc9d90, type: 3}
+  m_Script: {fileID: 11500000, guid: bc66cd54414d57f4fbdb63ae8ade45da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  icon: {fileID: 2800000, guid: 044e8d85ecdf666488620d816f61b8d8, type: 3}

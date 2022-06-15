@@ -9,11 +9,6 @@ public class PatrolRegionDetector : MonoBehaviour
 
     private bool playerDetected = false;
 
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +16,7 @@ public class PatrolRegionDetector : MonoBehaviour
         if(!playerDetected)
         {
             enemyController.detectPlayer = false;
+            enemyController.marioBody = null;
         }
         playerDetected = false;
     }
@@ -30,6 +26,7 @@ public class PatrolRegionDetector : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             enemyController.detectPlayer = true;
+            enemyController.marioBody =  other.gameObject.GetComponent<Rigidbody2D>();
             playerDetected = true;
         }
         
